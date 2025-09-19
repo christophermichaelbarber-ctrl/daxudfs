@@ -1,5 +1,5 @@
 // Profit_and_loss: Create the P&L layout with appropriate sums, subtotals, and spacing
-	function __Fn_PnL_Sum_Subtotal_and_Blanks =
+	function finance.profitandloss.createinfull.Sum_Subtotal_and_Blanks =
 			(
 			    amount: EXPR
 			) =>
@@ -22,4 +22,7 @@
 			VAR step3_add_zero = COALESCE( step1_lineitem, step2_subtotal, step3_addblanks )
 			RETURN
 			    step3_add_zero
-		lineageTag: 26c36bef-557c-49fa-a7a3-5339f214ddef
+
+
+    annotation DAXLIB_PackageId = profitandloss.createinfull\0.1.1-beta
+    annotation DAXLIB_PackageVersion = 0.1.1
